@@ -15,7 +15,9 @@ class TabLink {
     
     // Add a click event listener on this instance, calling the select method on click
     this.element.addEventListener("click", () => this.select());
+
   };
+  
 
   select() {
     // Get all of the elements with the tabs-link class
@@ -36,6 +38,7 @@ class TabLink {
     // Call the select method on the item associated with this link
     this.tabItem.select();
   }
+  
 }
 
 class TabItem {
@@ -55,6 +58,7 @@ class TabItem {
     // Add a class named "tabs-item-selected" to this element
     this.elementTab.classList.add("tabs-item-selected");
   }
+  
 }
 
 /* START HERE: 
